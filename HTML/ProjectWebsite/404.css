@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#stuff {
+    margin: 300px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+#bar {
+    border: 2px solid black;
+    width: 30%;
+    height: 20px;
+    margin-left: 35%;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, white, white, white, white, white);
+}

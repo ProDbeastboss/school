@@ -1,0 +1,50 @@
+body {
+    font-family:Verdana, Arial, sans-serif;
+    background:url(Files/greenbg.gif);
+    color:#dc143c;
+    font-size:12pt;
+    display: block;
+    margin-top: 20;
+}
+
+h1 {
+    color:#ffa500;
+    text-align:center;
+}
+
+h2 {
+    color:#808000;
+    text-align:center;
+}
+
+.indent {
+    margin-left: 50;
+}
+
+li {
+    list-style-image:url(Files/chicken-icon.png);
+}
+
+em {
+    color:#808000;
+}
+
+a:link {
+    color:#a52a2a;
+    text-decoration:none;
+}
+  
+a:hover {
+    color:#ff0000;
+    background-color:#ffff99;
+}
+
+a:visted {
+    color:#8b4513;
+}
+
+footer {
+    background-color:#360;
+    color:white;
+    text-align:center;
+}

@@ -1,0 +1,33 @@
+<!--     https://mcgwxbrbjbbuh5b6qkqxuq.on.drv.tw/WebsiteMaker/     -->
+
+<html>
+    <head>
+        <title>Website Maker</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="home.js"></script>
+    </head>
+
+    <body onload="loadpage()">
+        <div id="codeEditor">
+            <textarea id="visibletext"></textarea>
+        </div>
+
+        <div id="websiteView">
+            <iframe id="website"></iframe>
+        </div>
+
+        <footer>
+            <div id="credits">
+            Creator: Kyle Issler     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     Hosted by: Drive To Web (drv.tw)
+            </div>
+
+            <div class="butonas" onclick="save()">
+                Save
+            </div>
+
+            <div class="butonas" onclick="load()">
+                Load
+            </div>
+        </footer>
+    </body>
+</html>

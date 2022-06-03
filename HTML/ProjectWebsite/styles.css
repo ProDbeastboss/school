@@ -1,0 +1,72 @@
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#websiteView {
+    background-color: grey;
+    width: 58%;
+    height: 95%;
+    float: right;
+    padding: 1% 1% 1% 1%;
+}
+
+#codeEditor {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 97%;
+    width: 40%;
+    float: left;
+    background-color: black;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+#website {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    margin: 3% 3% 3% 3%;
+    width: 94%;
+    height: 94%;
+    color: white;
+}
+
+.explorerlink {
+    border-width: 0px;
+    background-color: darkblue;
+    color: white;
+}
+
+#footerBar {
+    background-color: grey;
+    width: 100%;
+    height: 3%;
+    float: bottom;
+}
+
+textarea {
+    margin: 3% 3% 3% 3%;
+    width: 94%;
+    height: 94%;
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+.butonas {
+    float: right;
+    margin-right: 20px;
+    padding-top:5px;
+}
+
+#credits {
+    padding-top: 5px;
+    float: left;
+}

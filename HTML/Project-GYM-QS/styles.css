@@ -1,0 +1,39 @@
+.div1 {
+    background: white;
+    border: 5px solid #59656f;
+    border-width: 0px 0px 0px 10px;
+    padding: 5px 5px 20px 20px;
+    margin-left: 20;
+    margin-right: 20;
+}
+
+.div2 {
+    background: #59656f;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+body {
+    background: #D7CDCC;
+    margin: 0px 0px 0px 0px;
+}
+
+label {
+    margin-left: 5;
+}
+
+.hitem {
+    display: inline-block;
+    font-size: 25;
+    color: white;
+    padding-left: 40px;
+
+}
