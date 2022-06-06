@@ -47,7 +47,7 @@ if action == 'decrypt' or action == 'Decrypt' or action == 'd':
     print ('it should look like this (437258702673492067742745)')
     print ('\n\n\n\n')
     publickeyinput = input('>> ')
-
+#45520836495244611324403056233917484062791632513841974599237769682627304403917349720898783413371896123618846013663293518919035616588949812532514543724215185284437537893506571636286184099134547812161646357385235072171741764973951215990585
     os.system('cls' if os.name == 'nt' else 'clear')
 
     print ('Please enter text to decrypt')
@@ -56,12 +56,14 @@ if action == 'decrypt' or action == 'Decrypt' or action == 'd':
 
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    mathedmessage = int(rawtexttodecrypt) / int(publickeyinput)
-    rawmessage = [str(mathedmessage)[i:i + 3] for i in range(0, len(str(mathedmessage)), 3)]
-    message = [chr(character) for character in rawmessage]
+    print(rawtexttodecrypt.split())
+    #mathedmessage = int(rawtexttodecrypt) / int(publickeyinput)
+    #output=f"{mathedmessage:9999999f}"
+    #rawmessage = [str(mathedmessage)[i:i + 3] for i in range(0, len(str(mathedmessage)), 3)]
+    #print(output)
+    #message = [chr(character) for character in rawmessage]
 
-    print(message)
+    #print(message)
     print ('\n\n\n\n')
     input ('Press enter to exit ')
     os.system('cls' if os.name == 'nt' else 'clear')
-    45520817241823891712358468225
