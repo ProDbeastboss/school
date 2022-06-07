@@ -1,5 +1,6 @@
 from math import *
 import os
+from textwrap import wrap
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -14,7 +15,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 if action == 'encrypt' or action == 'Encrypt' or action == 'e':
     print ('Please enter Key')
     print ('\n')
-    print ('it should look like this (437258702673492067742745)')
+    print ('it should look like this (11813702673492067742745)')
     print ('\n\n\n\n')
     publickeyinput = input('>> ')
 
@@ -26,16 +27,28 @@ if action == 'encrypt' or action == 'Encrypt' or action == 'e':
 
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    asciitoencrypt = [ord(character) for character in rawtexttoencrypt]
-    i = 0
-    while i < len(asciitoencrypt):
-        asciitoencrypt[i] = str('%03d' % int(asciitoencrypt[i]))
-        i += 1
-    texttoencrypt = int(''.join(asciitoencrypt))
+    rawasciitoencrypt = [ord(character) for character in rawtexttoencrypt]
+    asciitoencrypt = []
+    asciistringtoencrypt = ''
+    for x in rawasciitoencrypt:
+        asciitoencrypt.append(str('%03d' % int(x)))
+    for x in asciitoencrypt:
+        asciistringtoencrypt += x
+    characterstoencrypt = list(asciistringtoencrypt)
+    encryptedarray = []
+    for x in characterstoencrypt:
+        encryptedarray.append(int(x)*int(publickeyinput))
+    editedencryptedarray = []
+    for x in encryptedarray:
+        if (x != 0):
+            editedencryptedarray.append(x)
+        else:
+            editedencryptedarray.append(49673960482957385037163)
+    finalencryptedmessage = ''
+    for x in editedencryptedarray:
+        finalencryptedmessage += str(x)
+    print(finalencryptedmessage)
 
-    message = texttoencrypt * int(publickeyinput)
-
-    print(message)
     print ('\n\n\n\n')
     input ('Press enter to exit ')
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -44,10 +57,10 @@ if action == 'encrypt' or action == 'Encrypt' or action == 'e':
 if action == 'decrypt' or action == 'Decrypt' or action == 'd':
     print ('Please enter Key')
     print ('\n')
-    print ('it should look like this (437258702673492067742745)')
+    print ('it should look like this (11813702673492067742745)')
     print ('\n\n\n\n')
     publickeyinput = input('>> ')
-#45520836495244611324403056233917484062791632513841974599237769682627304403917349720898783413371896123618846013663293518919035616588949812532514543724215185284437537893506571636286184099134547812161646357385235072171741764973951215990585
+
     os.system('cls' if os.name == 'nt' else 'clear')
 
     print ('Please enter text to decrypt')
@@ -56,14 +69,14 @@ if action == 'decrypt' or action == 'Decrypt' or action == 'd':
 
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    print(rawtexttodecrypt.split())
-    #mathedmessage = int(rawtexttodecrypt) / int(publickeyinput)
-    #output=f"{mathedmessage:9999999f}"
-    #rawmessage = [str(mathedmessage)[i:i + 3] for i in range(0, len(str(mathedmessage)), 3)]
-    #print(output)
-    #message = [chr(character) for character in rawmessage]
-
-    #print(message)
+    splitencryptedarray = wrap(rawtexttodecrypt, 23)
+    splitdecryptedarray = []
+    
+    print(splitencryptedarray)
     print ('\n\n\n\n')
     input ('Press enter to exit ')
     os.system('cls' if os.name == 'nt' else 'clear')
+
+
+
+#118137026734920677427454967396048295738503716347254810693968270970980118137026734920677427454967396048295738503716359068513367460338713725496739604829573850371633544110802047620322823535441108020476203228235
